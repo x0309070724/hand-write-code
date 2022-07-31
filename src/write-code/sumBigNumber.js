@@ -6,7 +6,7 @@ function sumBigNumber(a, b) {
   b = b.split("");
 
   while (a.length || b.length || temp) {
-    temp += ~~a.pop() + ~~b.pop(); // 12 11 9
+    temp += Number(a.pop()) + Number(b.pop()); // 12 11 9
     res = (temp % 10) + res; // 2 12 912
     temp = temp > 9;
   }
